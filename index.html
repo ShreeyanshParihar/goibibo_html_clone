@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Travel-Landing-Page</title>	
+
+    <!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+<style type="text/css">
+  
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #FFF;
+    background-color: transparent;
+    border-radius: 100%;
+    
+}
+
+.carousel-indicators .active{
+	background-color: #fff;
+	width: 15px;
+    height: 15px;
+    border: none;
+    border-radius: 100%;
+    margin-top: -2px;
+}
+
+.testi li {
+    width: 10px;
+    height: 10px;
+    border: 2px solid rgb(51,34,117);
+    background-color: transparent;
+    border-radius: 100%;
+    
+}
+
+.testi .active{
+
+	width: 17px;
+    height: 17px;
+    border: none;
+    border-radius: 100%;
+	background-color: rgb(51,34,117);
+}
+
+
+
+.carousel-caption{
+	top: 20%;
+	bottom: auto;
+	right: 20%;
+	left: auto;
+}
+
+
+.nav-pills a{
+	color: rgb(0,0,0);
+}
+
+.nav-pills .nav-link.active {
+	color: #fff; 
+    background-color:rgb(51,34,117);
+    border-radius: 0%;
+}
+
+
+.acc {
+	border: 1px solid #aaa;
+}
+
+.acc:not(.collapsed) {
+	background-color: #333;
+	color: #FFF;
+}
+
+
+.ico {
+  background-image: url('Asset/plus.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
+.acc:not(.collapsed) > .ico {
+  background-image: url('Asset/minus.png');
+}
+
+
+.form-control {
+	border-radius: 0%;
+	border-width: 1.5px;
+	border-color: #dfdfdf;
+}
+
+.btn-submit {
+	border-radius: 0%;
+	background-color:rgb(51,34,117);
+	color: #FFF;
+}
+
+</style>
+
+</head>
+<body>
+
+
+<!-- Header -->
+
+<div class="container-fluid">
+  <div class="row" style="background-color: rgb(51,34,117);">
+         <div class="col text-center text-light" >
+          Connect With Us: <img class="px-2" src="Asset/facebook.png"> <img class="px-2" src="Asset/instagram.png"> <img class="px-2" src="Asset/twitter.png"> <img class="px-2" src="Asset/pinterest.png"> 
+          </div>
+         <div class="col text-center text-light">
+          Call: +91-79 2685 5414/8859
+  	     </div>
+  </div>
+
+
+  <div class="row">
+  	<div class="col-4 text-center">
+  		<img class="align-middle" src="Asset/goibibo.png">
+  	</div>
+
+    <div class="col-8" style="height: 80px">
+    	<div class="row h-100">
+        <div class="col my-auto">
+            <div class="w-100 text-center mx-auto">
+            	<ul class="nav justify-content-center">
+  <li class="nav-item">
+    <a class="nav-link text-dark" href="#">About Us</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link text-dark" href="#">Testimonial</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link text-dark" href="#">Contact Us</a>
+  </li>
+  <li class="nav-item mx-3" style="background-color: rgb(51,34,117); ">
+    <a class="nav-link text-light" href="#" >Quick Payment</a>
+  </li>
+</ul>
+
+            </div>
+        </div>
+    </div>
+      
+    </div>
+  </div>
+</div>
+<!-- Header End -->
+
+<!-- Carousal -->
+
+<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="Asset/carousel.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption text-right d-none d-md-block">
+        <h2>Lorem Ipsum is simply dummy text</h2>
+        <p>when an unknown printer took a galley of type and scrambled.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="Asset/carousel.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption text-right d-none d-md-block">
+        <h2>Lorem Ipsum is simply dummy text</h2>
+        <p>when an unknown printer took a galley of type and scrambled.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="Asset/carousel.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption text-right d-none d-md-block">
+        <h2>Lorem Ipsum is simply dummy text</h2>
+        <p>when an unknown printer took a galley of type and scrambled.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Carousal Ends -->
+
+
+<!-- About Goibibo -->
+
+<div class="container-fluid my-5 px-5 text-center">
+  <h2>About Go ibibo Travel</h2>
+  <div class="container">
+  	<img src="Asset/line.png" class="img-fluid">
+    <img src="Asset/dot.png" style="position: relative; left: -65px " class="img-fluid" width="10px" height="10px">	
+  </div>
+
+  <img src="Asset/cars.png" class="img-fluid my-5">
+
+  <p class="text-center mx-5 px-5">
+  	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+  </p>
+</div>
+<!-- About Goibibo  End-->
+
+
+
+
+<!-- Vehicle to ride -->
+
+<div class="container-fluid mt-5 pt-5 px-5 text-center">
+  <h2 class="mt-5">Vehicle to Ride</h2>
+  <div class="container">
+  	<img src="Asset/line.png" class="img-fluid">
+    <img src="Asset/dot.png" style="position: relative; left: -65px " class="img-fluid" width="10px" height="10px">	
+  </div>
+
+
+
+
+<ul class="nav nav-pills justify-content-center my-5" id="pills-tab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link active" id="pills-bmw-tab" data-toggle="pill" href="#pills-bmw" role="tab" aria-controls="pills-bmw" aria-selected="true">BMW</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link " id="pills-audi-tab" data-toggle="pill" href="#pills-audi" role="tab" aria-controls="pills-audi" aria-selected="false">Audi</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link " id="pills-honda-tab" data-toggle="pill" href="#pills-honda" role="tab" aria-controls="pills-honda" aria-selected="false">Honda</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link " id="pills-toyota-tab" data-toggle="pill" href="#pills-toyota" role="tab" aria-controls="pills-toyota" aria-selected="false">Toyota</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link " id="pills-mercedes-tab" data-toggle="pill" href="#pills-mercedes" role="tab" aria-controls="pills-mercedes" aria-selected="false">Mercedes</a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link " id="pills-others-tab" data-toggle="pill" href="#pills-others" role="tab" aria-controls="pills-others" aria-selected="false">Others</a>
+  </li>
+</ul>
+
+
+
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="pills-bmw" role="tabpanel" aria-labelledby="pills-bmw-tab">
+  <div class="row row-cols-1 row-cols-md-3 mx-5 px-5">
+  <div class="col mb-4">
+    <div class="card">
+      <img src="Asset/1.png" class="card-img-top" width="300" height="250px" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-left border-bottom mt-0 pt-0 pb-3">Bmw 7 series</h5>
+        <div class="row" style="font-size: 15px">
+        	<div class="col-3">
+        		<img src="Asset/seat1.png">
+        		4 Seat
+        	</div>
+        	<div class="col-4">
+        		<img src="Asset/luggage1.png">
+        		4 Luggage
+        	</div>
+        	<div class="col-5">
+        		<img src="Asset/ac1.png">
+        		AC/Non AC
+        		
+        	</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card">
+      <img src="Asset/2.png" class="card-img-top" width="300px" height="250px" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-left border-bottom mt-0 pt-0 pb-3">X6 M - F15SAV</h5>
+        <div class="row" style="font-size: 15px">
+        	<div class="col-3">
+        		<img src="Asset/seat1.png">
+        		4 Seat
+        	</div>
+        	<div class="col-4">
+        		<img src="Asset/luggage1.png">
+        		4 Luggage
+        	</div>
+        	<div class="col-5">
+        		<img src="Asset/ac1.png">
+        		AC/Non AC
+        		
+        	</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card">
+      <img src="Asset/3.png" class="card-img-top" width="300px" height="250px" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-left border-bottom mt-0 pt-0 pb-3">X6 M - F16SAV</h5>
+        <div class="row" style="font-size: 15px">
+        	<div class="col-3">
+        		<img src="Asset/seat1.png">
+        		4 Seat
+        	</div>
+        	<div class="col-4">
+        		<img src="Asset/luggage1.png">
+        		4 Luggage
+        	</div>
+        	<div class="col-5">
+        		<img src="Asset/ac1.png">
+        		AC/Non AC
+        		
+        	</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card">
+      <img src="Asset/4.png" class="card-img-top" width="300px" height="250px" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-left border-bottom mt-0 pt-0 pb-3">BMW M3</h5>
+        <div class="row" style="font-size: 15px">
+        	<div class="col-3">
+        		<img src="Asset/seat1.png">
+        		4 Seat
+        	</div>
+        	<div class="col-4">
+        		<img src="Asset/luggage1.png">
+        		4 Luggage
+        	</div>
+        	<div class="col-5">
+        		<img src="Asset/ac1.png">
+        		AC/Non AC
+        		
+        	</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card">
+      <img src="Asset/5.png" class="card-img-top" width="300px" height="250px" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-left border-bottom mt-0 pt-0 pb-3">BMW 3 Series Sedan</h5>
+        <div class="row" style="font-size: 15px">
+        	<div class="col-3">
+        		<img src="Asset/seat1.png">
+        		4 Seat
+        	</div>
+        	<div class="col-4">
+        		<img src="Asset/luggage1.png">
+        		4 Luggage
+        	</div>
+        	<div class="col-5">
+        		<img src="Asset/ac1.png">
+        		AC/Non AC
+        		
+        	</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card">
+      <img src="Asset/6.png" class="card-img-top" width="300px" height="250px" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-left border-bottom mt-0 pt-0 pb-3">BMW 7 Series Sedan</h5>
+        <div class="row" style="font-size: 15px">
+        	<div class="col-3">
+        		<img src="Asset/seat1.png">
+        		4 Seat
+        	</div>
+        	<div class="col-4">
+        		<img src="Asset/luggage1.png">
+        		4 Luggage
+        	</div>
+        	<div class="col-5">
+        		<img src="Asset/ac1.png">
+        		AC/Non AC
+        		
+        	</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  </div>
+  <div class="tab-pane fade" id="pills-audi" role="tabpanel" aria-labelledby="pills-audi-tab">Audi</div>
+  <div class="tab-pane fade" id="pills-honda" role="tabpanel" aria-labelledby="pills-honda-tab">Honda</div>
+   <div class="tab-pane fade" id="pills-toyota" role="tabpanel" aria-labelledby="pills-toyota-tab">Toyota</div>
+  <div class="tab-pane fade" id="pills-mercedes" role="tabpanel" aria-labelledby="pills-mercedes-tab">Mercedes</div>
+  <div class="tab-pane fade" id="pills-others" role="tabpanel" aria-labelledby="pills-others-tab">Others</div>
+</div>
+
+
+<div class="row mx-5 my-5 px-5">
+	<div class="col-md-6 text-justify">
+		Contemporary Companies can not do without pinted advertising maternal. Properly designed business cards, leaflets, brochures, calendars, stickers, brochures, catalogs create the image of your business and help you effectively win customers. With this awareness, we put a lot of work into the design and careful execution of advertising.
+
+		<div class="progress progress-bar-striped my-3" style="height: 40px">
+           <div class="progress-bar progress-bar-striped bg-info text-left px-5 progress h-100" role="progressbar" style="width: 90% ;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+           	BRANDING 90%
+           </div>
+         </div>
+
+         <div class="progress progress-bar-striped my-3" style="height: 40px">
+             <div class="progress-bar progress-bar-striped bg-info text-left px-5 progress h-100" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+             	EDITORIAL 80%
+             </div>
+         </div>
+
+         <div class="progress progress-bar-striped my-3" style="height: 40px">
+              <div class="progress progress-bar progress-bar-striped bg-info text-left h-100 py-auto px-5" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+              	PHOTOGRAPHY 85%
+              </div>
+         </div>
+
+         <div class="progress progress-bar-striped my-3" style="height: 40px">
+              <div class="progress-bar progress-bar-striped bg-info text-left px-5 progress h-100" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+              	WEB DESIGN 65%
+              </div>
+         </div>
+	</div>
+	
+	<div class="col-md-6">
+		
+<div class="accordion" id="accordionExample">
+  <div class="my-2 py-1">
+      <h2 class="mb-0">
+        <button class="btn btn-block text-left acc collapsed font-weight-bold" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+          WHO WE ARE<div class="ico p-2 mt-1" style="float: right;" ></div>
+        </button>
+      </h2>
+    <div id="collapseOne" class="collapse py-2 mx-2 px-2 text-muted text-left" aria-labelledby="headingOne" data-parent="#accordionExample">
+        ELVO has existed continuously since January 1997. From the very beginning of
+our activity, we put a lot of emphasis on the complex service of advertising companies. This is due to the fact that our business profile ts practically unlimited. 20 years of experience. not only on the local market.
+      
+    </div>
+  </div>
+  <div class="my-2 py-1" >
+    
+      <h2 class="mb-0">
+        <button class="btn btn-block text-left acc collapsed font-weight-bold" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          WHY CHOOSE US<div class="ico p-2 mt-1" style="float: right;" ></div>
+        </button>
+      </h2>
+   
+    <div id="collapseTwo" class="collapse py-2 mx-2 px-2 text-muted text-left" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      
+        ELVO has existed continuously since January 1997. From the very beginning of
+our activity, we put a lot of emphasis on the complex service of advertising companies. This is due to the fact that our business profile ts practically unlimited. 20 years of experience. not only on the local market.
+      
+    </div>
+  </div>
+  <div class="my-2 py-1 " >
+    
+      <h2 class="mb-0">
+        <button class="btn btn-block text-left acc font-weight-bold" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+          ABOUT OUR BUSINESS<div class="ico p-2 mt-1" style="float: right;" ></div>
+        </button>
+      </h2>
+    
+    <div id="collapseThree" class="collapse py-2 mx-2 px-2 text-left text-muted show" aria-labelledby="headingThree" data-parent="#accordionExample">
+      
+        ELVO has existed continuously since January 1997. From the very beginning of
+our activity, we put a lot of emphasis on the complex service of advertising
+companies. This is due to the fact that our business profile ts practically
+unlimited. 20 years of experience. not only on the local market.
+      
+    </div>
+  </div>
+   <div class="my-2 py-1" >
+    
+      <h2 class="mb-0">
+        <button class="btn btn-block text-left acc collapsed font-weight-bold" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          DEADLINES<div class="ico p-2 mt-1" style="float: right;" ></div>
+        </button>
+      </h2>
+ 
+    <div id="collapseFour" class="collapse py-2 mx-2 px-2 text-left text-muted" aria-labelledby="headingFour" data-parent="#accordionExample">
+      
+       ELVO has existed continuously since January 1997. From the very beginning of
+our activity, we put a lot of emphasis on the complex service of advertising
+companies. This is due to the fact that our business profile ts practically
+unlimited. 20 years of experience. not only on the local market.
+      
+    </div>
+  </div>
+</div>
+
+
+
+	</div>
+</div>
+  
+</div>
+
+<!-- Vehicle to ride End-->
+
+
+
+
+<!-- Black strip -->
+
+<div class="container-fluid text-center bg-dark py-4 px-5">
+     <div class="row w-100">
+
+
+     <div class="col-md-2"></div>
+     <div class="col-md-2">
+     		<img class="my-2" src="Asset/customer.png">
+     		<br>
+     		<img class="my-2" src="Asset/5980.png">  	
+     </div>
+     <div class="col-md-2">
+     	<img class="my-2" src="Asset/trophy.png">
+     	<br>
+     	<img class="my-2" src="Asset/1020.png">
+     </div>
+     <div class="col-md-2">
+     	<img class="my-2" src="Asset/chat.png">
+     	<br>
+     	<img class="my-2" src="Asset/4230.png">
+     </div>
+     <div class="col-md-2">
+     	<img class="my-2" src="Asset/download.png">
+     	<br>
+     	<img class="my-2" src="Asset/9750.png">
+     </div>
+     <div class="col-md-2"></div>
+     	
+     </div>
+
+</div>
+
+<!-- Black strip end -->
+
+<!-- Testimonial -->
+
+<div class="container-fluid p-5 bg-light text-center">
+	<h2 class="mt-5">Testimonial</h2>
+  <div class="container">
+  	<img src="Asset/line.png" class="img-fluid">
+    <img src="Asset/dot.png" style="position: relative; left: -65px " class="img-fluid" width="10px" height="10px">	
+  </div>
+
+<div id="carouselCaptions" class="carousel slide p-5 m-5" data-ride="carousel">
+  <ol class="carousel-indicators testi">
+    <li  data-target="#carouselCaptions" data-slide-to="0" class="active"></li>
+    <li  data-target="#carouselCaptions" data-slide-to="1"></li>
+    <li  data-target="#carouselCaptions" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div  class="d-block w-100 p-5">
+
+ <div class="row">
+  <div class="col-sm-6">
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <h5 class="card-title text-right"><img src="Asset/comma.png"></h5>
+        <p class="card-text px-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the</p>
+         
+        <div class="row w-75 px-5">
+        	<div class="col-2">
+        		<img src="Asset/man.png" width="50px" height="50px" class="rounded-circle">
+        	</div>
+        	<div class="col-10 text-left px-4">
+        		<strong>John Dio</strong><br>
+        		<strong class="text-muted">Manager,kotak bank</strong>
+        		
+        	</div>
+        	
+        </div> 
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <h5 class="card-title text-right"><img src="Asset/comma.png"></h5>
+        <p class="card-text px-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the</p>
+         
+        <div class="row w-75 px-5">
+        	<div class="col-2">
+        		<img src="Asset/woman.png" width="50px" height="50px" class="rounded-circle">
+        	</div>
+        	<div class="col-10 text-left px-4">
+        		<strong>Sarah P.</strong><br>
+        		<strong class="text-muted">HOD,Soarce Solutions</strong>
+        		
+        	</div>
+        	
+        </div> 
+      </div>
+    </div>
+  </div>
+</div>
+      
+       </div>
+      
+    </div>
+    <div class="carousel-item">
+      <div class="d-block w-100 p-5">
+
+  <div class="row">
+  <div class="col-sm-6">
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <h5 class="card-title text-right"><img src="Asset/comma.png"></h5>
+        <p class="card-text px-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the</p>
+         
+        <div class="row w-75 px-5">
+        	<div class="col-2">
+        		<img src="Asset/man.png" width="50px" height="50px" class="rounded-circle">
+        	</div>
+        	<div class="col-10 text-left px-4">
+        		<strong>John Dio</strong><br>
+        		<strong class="text-muted">Manager,kotak bank</strong>
+        		
+        	</div>
+        	
+        </div> 
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <h5 class="card-title text-right"><img src="Asset/comma.png"></h5>
+        <p class="card-text px-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the</p>
+         
+        <div class="row w-75 px-5">
+        	<div class="col-2">
+        		<img src="Asset/woman.png" width="50px" height="50px" class="rounded-circle">
+        	</div>
+        	<div class="col-10 text-left px-4">
+        		<strong>Sarah P.</strong><br>
+        		<strong class="text-muted">HOD,Soarce Solutions</strong>
+        		
+        	</div>
+        	
+        </div> 
+      </div>
+    </div>
+  </div>
+</div>
+      	
+      </div>      
+    </div>
+    <div class="carousel-item">
+      <div class="d-block w-100 p-5">
+
+       <div class="row">
+  <div class="col-sm-6">
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <h5 class="card-title text-right"><img src="Asset/comma.png"></h5>
+        <p class="card-text px-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the</p>
+         
+        <div class="row w-75 px-5">
+        	<div class="col-2">
+        		<img src="Asset/man.png" width="50px" height="50px" class="rounded-circle">
+        	</div>
+        	<div class="col-10 text-left px-4">
+        		<strong>John Dio</strong><br>
+        		<strong class="text-muted">Manager,kotak bank</strong>
+        		
+        	</div>
+        	
+        </div> 
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <h5 class="card-title text-right"><img src="Asset/comma.png"></h5>
+        <p class="card-text px-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the</p>
+         
+        <div class="row w-75 px-5">
+        	<div class="col-2">
+        		<img src="Asset/woman.png" width="50px" height="50px" class="rounded-circle">
+        	</div>
+        	<div class="col-10 text-left px-4">
+        		<strong>Sarah P.</strong><br>
+        		<strong class="text-muted">HOD,Soarce Solutions</strong>
+        		
+        	</div>
+        	
+        </div> 
+      </div>
+    </div>
+  </div>
+</div>
+      	
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+</div>	
+
+<!-- Testimonial End -->
+
+
+
+
+
+<!-- Members -->
+
+<div class="container-fluid text-center py-4 px-5">
+     <h2 class="mt-5">We are Members of</h2>
+  <div class="container">
+  	<img src="Asset/line.png" class="img-fluid">
+    <img src="Asset/dot.png" style="position: relative; left: -65px " class="img-fluid" width="10px" height="10px">	
+  </div>
+
+     <div class="row w-100 my-5 py-5">
+     <div class="col-md-1"></div>
+     <div class="col-md-2">
+     		<img class="my-2" src="Asset/mem1.png">	 	
+     </div>
+     <div class="col-md-2">
+     	<img class="my-2" src="Asset/mem2.png">
+       </div>
+     <div class="col-md-2">
+     	<img class="my-2" src="Asset/mem3.png">
+      </div>
+     <div class="col-md-2">
+     	<img class="my-2" src="Asset/mem4.png">
+     </div>
+     <div class="col-md-2">
+     	<img class="my-2" src="Asset/mem5.png">
+     </div>
+     <div class="col-md-1"></div>
+     	
+     </div>
+
+</div>
+
+<!-- Members end -->
+
+
+
+<!-- Contact Us -->
+
+<div class="container-fluid p-5 bg-light text-center">
+	<h2 class="mt-5">Contact Us</h2>
+  <div class="container">
+  	<img src="Asset/line.png" class="img-fluid">
+    <img src="Asset/dot.png" style="position: relative; left: -65px " class="img-fluid" width="10px" height="10px">	
+  </div>
+
+  
+  <div class="row m-5">
+  	<div class="col-md-6">
+  		<div class="row">  			        
+        <div class="text-left" >
+        	<h4>Address</h4>
+        	<div>
+        		<img src="Asset/line.png" width="100px">
+        	</div>
+        	
+        	<table>
+        	<thead>
+        		<tr>
+        			<td class="align-top">
+        				<img src="Asset/location.png">
+        			</td>
+        			<td class="px-3  text-dark">
+        			     B/706, Ganesh Plaza,Nr. Navrangpura Bus Stand,<br>Navrangpura,Ahmedabad,<br>Gujarat- 380009.India.
+        			</td>
+        		</tr>
+        	</thead>
+        </table>
+        </div>
+  	          			
+  		</div>
+
+  		<div class="row mt-5">
+  			<div class="text-left" >
+        	<h4>Phone/Email</h4>
+        	<div>
+        		<img src="Asset/line.png" width="100px">
+        	</div>
+        	
+        	<table  cellpadding="5">
+        		<tr>
+        			<td class="align-top">
+        				<img src="Asset/phone.png">
+        			</td>
+        			<td class="px-3 text-dark">
+        			     +91-9904929149 
+        			</td>
+        		</tr>
+        		<tr>
+        			<td class="align-top">
+        				<img src="Asset/fax.png">
+        			</td>
+        			<td class="px-3  text-dark">
+        			     +91-9904929149/+91-9904929149   
+        			</td>
+        		</tr>
+        		<tr>
+        			<td class="align-top">
+        				<img src="Asset/mail.png">
+        			</td>
+        			<td class="px-3 text-dark">
+        			     conatact@goibibo.com 
+        			</td>
+        		</tr>
+        </table>
+        </div>
+
+
+
+  		</div>
+
+  	</div>
+  	<div class="col-md-6 ">
+  		
+ <form>
+ 	<div class="form-group">
+    <input type="text" class="form-control shadow-sm py-4" id="exampleInputName" placeholder="Your Name*" aria-describedby="nameHelp" required>
+  </div>
+  <div class="form-group">
+    <input type="email" class="form-control shadow-sm py-4" id="exampleInputEmail" placeholder="Email Id*" aria-describedby="emailHelp" required>
+  </div>
+  <div class="form-group">  
+    <input type="tel" class="form-control shadow-sm py-4" id="exampleInputPhone" placeholder="Your Phone*"
+    aria-describedby="phoneHelp" required>
+  </div>
+
+  <div class="form-group">
+    <textarea class="form-control shadow-sm py-4" id="exampleFormControlTextarea" rows="4" placeholder="Your Message*"></textarea>
+  </div>
+  
+  <button type="submit" class="btn w-100 py-3 shadow-sm btn-submit">Submit</button>
+</form>
+
+
+  	</div>
+  </div>
+
+
+
+</div>	
+<!-- Contact Us end -->
+
+<!-- copyright -->
+<div class="container-fluid">
+	<div class="row bg-dark">
+         <div class="col text-center text-light" >
+          <img src="Asset/copyright.png"> 
+          </div>
+         <div class="col text-center text-light">
+            <a style="text-decoration: none;" class="text-light" href="#">Privacy policy</a>|
+            <a  style="text-decoration: none;" class="text-light" href="#">Cancellation & Refund policy</a>|
+            <a style="text-decoration: none;" class="text-light" href="#">How To Pay</a>
+  	     </div>
+  </div>
+</div>
+
+
+
+<!-- copyright end -->
+
+
+
+</body>
+</html>
